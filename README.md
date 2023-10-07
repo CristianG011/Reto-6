@@ -101,7 +101,23 @@ if __name__ == "__main__":
     potencia = po(a, b, c, d, e)
     raiz = cu(a, b, c, d, e)
 ```
-
+# Punto 8
+form reto_6_prt7 import
+```
+if __name__ == "__main__":
+    a = float(input("Ingrese el primer número "))
+    b = float(input("Ingrese el segundo número "))
+    c = float(input("Ingrese el tercer número "))
+    d = float(input("Ingrese el cuarto número "))
+    e = float(input("Ingrese el quinto número "))
+    promedio = p(a, b, c, d, e)
+    mediana = me(a, b, c, d, e)
+    promedio_mult = pm(a, b, c, d, e)
+    orden_a = oa(a, b, c, d, e)
+    orden_b = od(a, b, c, d, e)
+    potencia = po(a, b, c, d, e)
+    raiz = cu(a, b, c, d, e)
+```
 # Punto 9
 9. Consultar qué es y cómo funciona *pip* en python.
 Pip en python es un sistema de gestión de paquetes utilizado para instalar y administrar paquetes de software escritos en Python y descargarlos a nuestra computadora con la finalidad de integrarlos a nuestros desarrollos realizado en python. Muchos paquetes pueden ser encontrados en el Python Package Index (PyPI). Python 2.7.9 y posteriores (en la serie Python2), Python 3.4 y posteriores incluyen pip (pip3 para Python3) por defecto; lo cual no es necesario instalarlo en nuestra pc ya que al instalar python en la version 3.4 o superior en automaático se instala el gestor de paquetes.
