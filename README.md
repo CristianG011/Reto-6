@@ -51,8 +51,8 @@
   + La raíz cúbica del menor número
 ```
 def p(a:float, b:float, c:float, d:float, e:float):
-    p1: (a + b + c + d + e) / 5
-    print(p1)
+    p1 = (a + b + c + d + e) / 5
+    print("El promedio es" + str(p1) + ".")
 
 def me(a:float, b:float, c:float, d:float, e:float):
     if c > d > a > b > e or c > d > a > e > b or c > e > a > d > b or c > e > a > b > d or c > b > a > d > e or c > b > a > e > d or d > c > a > b > e or d > c > a > e > b or d > e > a > c > b or d > e > a > b > c or d > b > a > c > e or d > b > a > e > c or e > c > a > b > d or e > c > a > d > b or e > d > a > c > b or e > d > a > b > c or c > d > a > b > e or c > d > a > e > b or c > e > a > d > b or c > e > a > b > d or c > b > a > d > e or c > b > a > e > d or d > c > a > b > e or d > c > a > e > b:
@@ -67,7 +67,7 @@ def me(a:float, b:float, c:float, d:float, e:float):
         print("La mediana es "  + str(d) + ".")
 def pm(a:float, b:float, c:float, d:float, e:float):
     p2 = (a * b * c * d * e)**1/5
-    print(p2)
+    print("El promedio multiplicativo es " + str(p2) + ".")
 def oa(a:float, b:float, c:float, d:float, e:float):
     l = [a, b, c, d, e]
     z = sorted(l)
@@ -81,12 +81,12 @@ def po(a:float, b:float, c:float, d:float, e:float):
     z = max(l)
     x = min(l)
     po = z**x
-    print(po)
+    print("la potencia del mayor número al menor es " + str(po) + ".")
 def cu(a:float, b:float, c:float, d:float, e:float): 
     l = [a, b, c, d, e]
     m = min(l)
     raiz = m**(1/3)
-    print(raiz)
+    print("La raiz del menor número es " + str(raiz) + ".")
 if __name__ == "__main__":
     a = float(input("Ingrese el primer número "))
     b = float(input("Ingrese el segundo número "))
@@ -100,7 +100,8 @@ if __name__ == "__main__":
     orden_b = od(a, b, c, d, e)
     potencia = po(a, b, c, d, e)
     raiz = cu(a, b, c, d, e)
-```    
+```
+
 # Punto 9
 9. Consultar qué es y cómo funciona *pip* en python.
 Pip en python es un sistema de gestión de paquetes utilizado para instalar y administrar paquetes de software escritos en Python y descargarlos a nuestra computadora con la finalidad de integrarlos a nuestros desarrollos realizado en python. Muchos paquetes pueden ser encontrados en el Python Package Index (PyPI). Python 2.7.9 y posteriores (en la serie Python2), Python 3.4 y posteriores incluyen pip (pip3 para Python3) por defecto; lo cual no es necesario instalarlo en nuestra pc ya que al instalar python en la version 3.4 o superior en automaático se instala el gestor de paquetes.
